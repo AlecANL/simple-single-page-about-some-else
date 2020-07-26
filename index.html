@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="learn css from book" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/css/minireset.min.css" />
+    <link rel="stylesheet" href="./assets/css/main.css" />
+    <link rel="stylesheet" href="./assets/css/animation.css" />
+    <title>CSS in 44 Mins</title>
+  </head>
+  <body>
+    <div
+      id="wallpaper"
+      data-image="./assets/images/austria.jpg"
+      class="wallpaper"
+    ></div>
+    <div class="content">
+      <aside class="side">
+        <figure id="picture" class="picture">
+          <div class="picture-shadow"></div>
+          <img
+            id="pictureImage"
+            src="./assets/images/alex.jpg"
+            srcset="
+              ./assets/images/alex.jpg    1x,
+              ./assets/images/alex@2x.jpg 2x,
+              ./assets/images/alex@3x.jpg 3x
+            "
+            alt="Portrait of alex jefferson"
+            width="320"
+            height="320"
+            class="picture-image"
+          />
+        </figure>
+      </aside>
+      <main class="about">
+        <h1 class="name">Hi, I'm Alex Jefferson</h1>
+        <p class="job">
+          Tech Recruiter
+        </p>
+        <hr class="hr" />
+        <div class="description">
+          <p>
+            I speed my time traveling the world, helping startups and tech
+            business hire the best people.
+          </p>
+        </div>
+        <div class="contact">
+          <a href="#" class="button">Get in touch</a>
+        </div>
+        <ul class="social">
+          <li>
+            <a href="#">
+              <em class="fab fa-twitter"></em>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <em class="fab fa-github"></em>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <em class="fab fa-linkedin"></em>
+            </a>
+          </li>
+        </ul>
+      </main>
+    </div>
+
+    <script
+      defer
+      src="https://use.fontawesome.com/releases/v5.0.0/js/all.js"
+    ></script>
+    <script src="./assets/js/app.js"></script>
+    <noscript>
+      <style>
+        .wallpaper {
+          animation-name: zoomOut;
+        }
+        .picture {
+          animation-name: dropIn;
+        }
+      </style>
+    </noscript>
+  </body>
+</html>
